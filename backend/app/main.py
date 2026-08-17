@@ -2,7 +2,7 @@ from fastapi import FastAPI
 
 from app.core.database import Base, engine
 from app.models import staff, service, appointments
-from app.routers import services
+from app.routers import services, appointments as appointments_router
 
 Base.metadata.create_all(bind=engine)
 
@@ -13,6 +13,7 @@ app = FastAPI(
 )
 
 app.include_router(services.router)
+app.include_router(appointments_router.router)
 
 
 @app.get("/health")
