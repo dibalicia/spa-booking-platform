@@ -1,0 +1,27 @@
+services:
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: spa_user
+      POSTGRES_PASSWORD: spa_password
+      POSTGRES_DB: spa_booking
+    ports:
+      - "5432:5432"
+    volumes:
+      - spa_pg_data:/var/lib/postgresql/data
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://spa_user:spa_password@db:5432/spa_booking
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - db
+
+volumes:
+  spa_pg_data:
