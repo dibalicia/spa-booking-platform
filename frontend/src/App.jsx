@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import hero from "./assets/hero.jpg";
 import Gallery from "./components/Gallery";
 import Reviews from "./components/Reviews";
+import ContactForm from "./components/ContactForm";
 
 export default function App() {
   return (
@@ -66,6 +67,7 @@ export default function App() {
 
       <Gallery />
       <Reviews />
+      <ContactForm />
     </div>
   );
 }
