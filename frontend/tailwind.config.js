@@ -13,6 +13,7 @@ export default {
       fontFamily: {
         display: ["Fraunces", "serif"],
         body: ["Work Sans", "sans-serif"],
+        heading: ["Montserrat", "sans-serif"],
       },
     },
   },
