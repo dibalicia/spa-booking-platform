@@ -15,6 +15,15 @@ export default {
         body: ["Work Sans", "sans-serif"],
         heading: ["Montserrat", "sans-serif"],
       },
+      keyframes: {
+        slide: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+      animation: {
+        slide: "slide 30s linear infinite",
+      },
     },
   },
   plugins: [],

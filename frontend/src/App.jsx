@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import hero from "./assets/hero.jpg";
+import Gallery from "./components/Gallery";
 
 export default function App() {
   return (
@@ -18,7 +19,7 @@ export default function App() {
       <main className="bg-ink">
         <section className="max-w-7xl mx-auto px-6 py-16">
           <div className="bg-ivory/10 backdrop-blur-md rounded-xl px-10 py-12 md:px-16 md:py-14">
-            <h2 className="font-heading font-light text-2xl md:text-4xl tracking-[0.15em] uppercase text-ivory mb-8 text-center">
+          <h2 className="font-heading font-light text-xl md:text-2xl lg:text-3xl tracking-[0.1em] uppercase text-ivory mb-8 text-center md:whitespace-nowrap">
               Ô Chakra — Spa &amp; Wellness Center in Algiers
             </h2>
 
@@ -61,6 +62,8 @@ export default function App() {
           </div>
         </section>
       </main>
+
+      <Gallery />
     </div>
   );
 }

@@ -1,8 +1,10 @@
 from fastapi import FastAPI
+from dotenv import load_dotenv
+load_dotenv()
 
 from app.core.database import Base, engine
 from app.models import staff, service, appointments
-from app.routers import services, appointments as appointments_router
+from app.routers import services, appointments as appointments_router, reviews
 
 Base.metadata.create_all(bind=engine)
 
@@ -14,6 +16,7 @@ app = FastAPI(
 
 app.include_router(services.router)
 app.include_router(appointments_router.router)
+app.include_router(reviews.router)
 
 
 @app.get("/health")
