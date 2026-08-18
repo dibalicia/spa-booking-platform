@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: "#16302E",
-        brass: "#C08A3E",
+        ink: "#4A1B22",
+        brass: "#D98A52",
         ivory: "#FBF5EA",
-        sage: "#7FA090",
-        charcoal: "#1F2A28",
+        sage: "#C9A28A",
+        charcoal: "#2B1013",
       },
       fontFamily: {
         display: ["Fraunces", "serif"],
