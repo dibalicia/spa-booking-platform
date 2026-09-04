@@ -9,7 +9,7 @@ export default function Footer() {
           <img src={logo} alt="Ô Chakra Spa" className="h-[130px] w-auto" />
         </div>
         <div className="flex flex-col gap-4 text-sm">
-          <a href="#price-list" className="text-ivory/80 hover:text-brass uppercase tracking-wide transition-colors">Price List</a>
+          <a href="/price-list" className="text-ivory/80 hover:text-brass uppercase tracking-wide transition-colors">Price List</a>
           <a href="#reviews" className="text-ivory/80 hover:text-brass uppercase tracking-wide transition-colors">Reviews</a>
           <a href="#egift" className="text-ivory/80 hover:text-brass uppercase tracking-wide transition-colors">E-Gift</a>
           <a href="#terms" className="text-ivory/80 hover:text-brass uppercase tracking-wide transition-colors">Terms and Conditions</a>

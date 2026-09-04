@@ -43,7 +43,7 @@ export default function Header() {
 
       <div className="bg-ink/50 backdrop-blur-sm border-b border-brass/10">
         <div className="max-w-7xl mx-auto px-6 h-11 flex items-center justify-center">
-          <a href="#price-list" className="text-sm font-medium tracking-[0.15em] uppercase text-ivory/80 hover:text-brass transition-colors">
+          <a href="/price-list" className="text-sm font-medium tracking-[0.15em] uppercase text-ivory/80 hover:text-brass transition-colors">
             Price List
           </a>
         </div>
