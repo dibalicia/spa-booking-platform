@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import contactPhoto from "../assets/contact-photo.jpg";
 
 export default function PriceList() {
   const [services, setServices] = useState([]);
@@ -24,11 +25,21 @@ export default function PriceList() {
     <div className="min-h-screen bg-ink">
       <Header />
 
-      <main className="max-w-4xl mx-auto px-6 pt-40 pb-24">
-        <h1 className="font-heading font-light text-3xl md:text-4xl uppercase tracking-[0.15em] text-ivory text-center mb-16">
-          Price List
-        </h1>
+      <section className="relative h-[65vh]">
+        <img
+          src={contactPhoto}
+          alt="Ô Chakra Spa treatment room"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative z-10 h-full flex items-center justify-center">
+        <h1 className="font-display font-light uppercase tracking-[0.1em] text-5xl md:text-7xl text-ivory">
+  Price List
+</h1>
+        </div>
+      </section>
 
+      <main className="max-w-4xl mx-auto px-6 py-24">
         {loading && (
           <p className="text-ivory/60 text-center font-body">Loading services...</p>
         )}
